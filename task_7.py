@@ -1,6 +1,6 @@
 import ifcopenshell
 
-file_path = r"C:\Users\1686768\SINITSKIKH\Example_1.ifc"
+file_path = "Example_1.ifc"
 
 model = ifcopenshell.open(file_path)
 
@@ -17,7 +17,7 @@ for door in doors:
         model.remove(door)
 
 # Создание подмодели
-output_path = r"C:\Users\1686768\SINITSKIKH\doors_wide.ifc"
+output_path = "doors_wide.ifc"
 model.write(output_path)
 print(f"Подмодель сохранена как: {output_path}")
 

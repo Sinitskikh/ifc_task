@@ -1,7 +1,7 @@
 import ifcopenshell
 import ifcopenshell.util.element
 
-file_path = r"C:\Users\1686768\SINITSKIKH\Example_1.ifc"
+file_path = "Example_1.ifc"
 
 model = ifcopenshell.open(file_path)
 
@@ -29,7 +29,7 @@ if "Pset_WallCommon" in psets:
                         print("Свойство IsExternal изменено на True.")
 
 # Сохранение изменённой модели в новый файл,
-new_file_path = r"C:\Users\1686768\SINITSKIKH\modified.ifc"
+new_file_path = "modified.ifc"
 model.write(new_file_path)
 print(f"\nФайл сохранен как {new_file_path}")
 

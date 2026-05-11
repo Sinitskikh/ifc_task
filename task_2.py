@@ -1,6 +1,6 @@
 import ifcopenshell
 
-file_path = r"C:\Users\1686768\SINITSKIKH\Example_1.ifc"
+file_path = "Example_1.ifc"
 
 model = ifcopenshell.open(file_path)
 
